@@ -1,0 +1,18 @@
+Here is an example of Fermi surface of fcc Iridium. 
+In ir.save directory there are files produced with help of Quantum Espresso.
+File sum is an input, which you have to construct on the basis of the output
+from Quantum Espresso (proj.out). Inspect proj.out, if you wish understand
+file sum.
+
+What you need to do:
+1) python ../FS_read_proj.py
+    type: ir
+    type: y
+2) python ../FS_plot_proj.py
+    type: y
+    type: 0 for p-states of Ir or 1 for s-states of Ir
+
+Then you see the Mayavi's window with Fermi surface plotted.
+
+In folder expected-results you'll find expected results, including
+*.png file with expected image of the Fermi surface.
