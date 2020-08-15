@@ -232,7 +232,10 @@ def make_ortorhombic_NN(e):
  h=open('FS_NN.dat','w')
  for i in NN:
   for m in range(3):
-   h.write( str(i[0][m])+' '+str(i[1][m])+' ' )
+   h.write( str(i[0][m])+' ')
+  h.write('\n')
+  for m in range(3):
+   h.write( str(i[1][m])+' ')
   h.write('\n')
  h.close()
 
