@@ -73,6 +73,8 @@ pts=mlab.plot3d(NN[:, 0],NN[:, 1],NN[:, 2],\
 color=(0,0,0),tube_radius=0.01)
 
 
+
+
 ###############Fermi surface
 if ifcolors!='n':
  sf=[]

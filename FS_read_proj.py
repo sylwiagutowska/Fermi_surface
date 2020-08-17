@@ -34,8 +34,10 @@ print('Reading parameters from '+name+'.save/data-file-schema.xml file...')
 [EF,e,lattice_type,NK_noneq,nk1,nk2,nk3,CELL]=read_parameters(name)
 
 ###############BOUNDARIES OF BZ
-if lattice_type in [1,3]:
+if lattice_type ==1:
  make_cubic_NN(e,lattice_type)
+elif lattice_type ==3:
+ make_bcc_NN(e)
 elif lattice_type in [2,5]:
  make_trig_NN(e)
 elif lattice_type ==6:
